@@ -1,7 +1,7 @@
 # CMSPOS-BTaggingExercise
 BTagging exercise repository for the 2019 CMS DAS at LPC, FNAL
 
-##Setup to run the exercises on Vanderbuilt site
+## Setup to run the exercises on Vanderbuilt site
 
 1. Login to Vanderbuilt JupyterHub
 (Copy from https://github.com/PerilousApricot/pyROOTforCMSDAS)  
@@ -27,21 +27,26 @@ Now you should see the JupyterHub home directory. Click on "New" then "Terminal"
 2. At terminal, copy your GRID proxy
 
 cd
+
 mkdir .globus
+
 cd .globus/
+
 scp yourusername@lxplus.cern.ch:~/.globus/* .
 
-## test proxy
+##test proxy
 voms-proxy-init -voms cms
 
-(Note replace lxplus.cern.ch by site where you store your GRID proxy. It is cmslpc-sl6.fnal.gov if you store your GRID proxy at FNAL LPC site) 
+(Note: replace lxplus.cern.ch by the site where you store your GRID proxy. It is cmslpc-sl6.fnal.gov if you store your GRID proxy at FNAL LPC site) 
 
 3. Get environment setup notebook:
 
 At terminal, do
 
 cd
+
 mkdir BTV_SW 
+
 cd BTV_SW
 
 wget https://raw.githubusercontent.com/PerilousApricot/pyROOTforCMSDAS/master/setupLibraries.ipynb
@@ -55,11 +60,11 @@ KERNAL_NAME="btv-excercise"
 </p>
 
 
-Execute the shell
+Execute the shell!
 
 CMSSW_9_4_12 is loaded to kernal "btv-exercise"
 
-4. Go back to the browser and  open new notebook with kernel "btv-exercise" setup. This notebook will be used as bash shell to execute terminal commands in the twiki.
+4. Go back to the browser and  open a new notebook with kernel "btv-exercise" setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
 
 Follow this picture 
 <p align="center">
@@ -70,11 +75,13 @@ Follow this picture
   <img src="kernal_shell_2.png" width="200"/>
 </p>
 
-5. Now start your exercises as instructed in the twiki, for example, git setting and download the exercises
+5. Now start your exercises as instructed in the twiki, for example, git setting and exercises downloading
 
 <p align="center">
   <img src="kernal_shell_3.png" width="200"/>
 </p>
+
+Open the exercise notebooks and continue with the exercises.
 
 PLEASE MAKE SURE THAT ALL YOUR NOTEBOOKS RUN UNDER "btv-exercise" KERNEL (LOOK AT YOUR TOP RIGHT CORNER OF YOUR SCREEN!!!)
 
