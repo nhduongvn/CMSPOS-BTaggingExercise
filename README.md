@@ -1,9 +1,9 @@
 # CMSPOS-BTaggingExercise
 BTagging exercise repository for the 2019 CMS DAS at LPC, FNAL
 
-## Setup to run the exercises on Vanderbuilt site
+## Setup to run the exercises on Vanderbilt site
 
-1. Login to Vanderbuilt JupyterHub
+1. Login to Vanderbilt JupyterHub
 (Copy from https://github.com/PerilousApricot/pyROOTforCMSDAS)  
 
 Point your browser to:
