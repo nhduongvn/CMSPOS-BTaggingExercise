@@ -52,7 +52,7 @@ cd BTV_SW
 wget https://raw.githubusercontent.com/PerilousApricot/pyROOTforCMSDAS/master/setupLibraries.ipynb
 
 Go back to browser and open the setupLibraries.ipynb (located at BTV_SW folder). Change
-CMSSW_VER="9_4_12"
+CMSSW_VER="CMSSW_9_4_12"
 KERNAL_NAME="btv-excercise"
 
 <p align="center">
