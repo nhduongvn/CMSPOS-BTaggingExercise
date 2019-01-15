@@ -74,7 +74,8 @@ void csvReweight(bool isHF=1, int insample=1, int reportEvery=100000) {
   double mySample_xSec_ = 1.;
   double mySample_nGen_ = 1.;
   std::string mySample_sampleName_ = "default";
-  std::string mySample_inputDir_ = "/afs/cern.ch/work/s/spmondal/public/BTVCSVReweight/Samples/";
+  //std::string mySample_inputDir_ = "/afs/cern.ch/work/s/spmondal/public/BTVCSVReweight/Samples/";
+  std::string mySample_inputDir_ = "/store/user/cmsdas/2019/short_exercises/Btagging/Samples/BTVCSVReweight/";
   
   //******MC*****
   if( insample==2500 ){
@@ -125,7 +126,7 @@ void csvReweight(bool isHF=1, int insample=1, int reportEvery=100000) {
     mySample_sampleName_ = "MuonEG";
   }
 
-  std::string treefilename = mySample_inputDir_ + mySample_sampleName_ + "*.root";
+  std::string treefilename = "root://cmseos.fnal.gov/" + mySample_inputDir_ + mySample_sampleName_ + "*.root";
   std::cout << "\tInput treefilename = " << treefilename.c_str() << std::endl;
 
   TChain *chain = new TChain("ttHTreeMaker/worldTree");
