@@ -16,7 +16,7 @@ If this is the first time using this JupyterHub, you should see:
   <img src="vanderbilt.png" width="500"/>
 </p>
 
-Click the "Sign in with CILogon" button. On the following page, select CERN as your identity provider and click the "Log On" button. Then, enter your CERN credentials or use your CERN grid certificate to autheticate. Choose "Default ACCRE Image v2" at Spawner Option.
+Click the "Sign in with CILogon" button. On the following page, select CERN as your identity provider and click the "Log On" button. Then, enter your CERN credentials or use your CERN grid certificate to autheticate. Choose "Default ACCRE Image v5" with 8 GB RAM and 8 cores at Spawner Option.
 
 Now you should see the JupyterHub home directory. Click on "New" then "Terminal" in the top right to launch a new terminal.
 
@@ -42,16 +42,18 @@ voms-proxy-init -voms cms
 
 At terminal, do
 ```bash
+mkdir BTV_SF
+cd BTV_SF
 wget https://raw.githubusercontent.com/nhduongvn/CMSPOS-BTaggingExercise/master/setup-libraries.ipynb
 ```
 
-Go back to browser and run the [setup-libraries.ipynb](setup-libraries.ipynb).
+Go back to browser and run the [setup-libraries.ipynb](setup-libraries.ipynb) in `BTV_SF` folder.
 
 <p align="center">
   <img src="kernal_setting.png" width="200"/>
 </p>
 
-4. Go back to the browser and  open a new notebook with kernel `btv-exercise` setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
+4. Go back to the browser and navigated to `CMSSW_10_2_15/src/CMSPOS/BTaggingExercise` open the notebook called [notebooks/Exercise1.ipynb](notebooks/Exercise1.ipynb) with kernel `btv-exercise` setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
 
 Follow this picture 
 <p align="center">
