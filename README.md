@@ -25,46 +25,36 @@ Now you should see the JupyterHub home directory. Click on "New" then "Terminal"
 </p>
 
 2. At terminal, copy your GRID proxy
-
+```bash
 cd
-
 mkdir .globus
-
-cd .globus/
+cd .globus
 
 scp yourusername@lxplus.cern.ch:~/.globus/* .
 
 ##test proxy
 voms-proxy-init -voms cms
+```
 
-(Note: replace lxplus.cern.ch by the site where you store your GRID proxy. It is cmslpc-sl6.fnal.gov if you store your GRID proxy at FNAL LPC site) 
+(Note: replace `lxplus.cern.ch` by the site where you store your GRID proxy. It is `cmslpc-sl6.fnal.gov` if you store your GRID proxy at FNAL LPC site) 
 
 3. Get environment setup notebook:
 
 At terminal, do
-
+```bash
 cd
-
 mkdir BTV_SW 
-
 cd BTV_SW
-
 wget https://raw.githubusercontent.com/PerilousApricot/pyROOTforCMSDAS/master/setupLibraries.ipynb
+```
 
-Go back to browser and open the setupLibraries.ipynb (located at BTV_SW folder). Change
-CMSSW_VER="CMSSW_9_4_12"
-KERNAL_NAME="btv-excercise"
+Go back to browser and run the setupLibraries.ipynb (located at BTV_SW folder). 
 
 <p align="center">
   <img src="kernal_setting.png" width="200"/>
 </p>
 
-
-Execute the shell!
-
-CMSSW_9_4_12 is loaded to kernal "btv-exercise"
-
-4. Go back to the browser and  open a new notebook with kernel "btv-exercise" setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
+4. Go back to the browser and  open a new notebook with kernel `btv-exercise` setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
 
 Follow this picture 
 <p align="center">
@@ -83,5 +73,4 @@ Follow this picture
 
 Open the exercise notebooks and continue with the exercises.
 
-PLEASE MAKE SURE THAT ALL YOUR NOTEBOOKS RUN UNDER "btv-exercise" KERNEL (LOOK AT YOUR TOP RIGHT CORNER OF YOUR SCREEN!!!)
-
+PLEASE MAKE SURE THAT ALL YOUR NOTEBOOKS RUN UNDER `btv-exercise` KERNEL (LOOK AT YOUR TOP RIGHT CORNER OF YOUR SCREEN!!!)
