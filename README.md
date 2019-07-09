@@ -42,13 +42,10 @@ voms-proxy-init -voms cms
 
 At terminal, do
 ```bash
-cd
-mkdir BTV_SW 
-cd BTV_SW
-wget https://raw.githubusercontent.com/PerilousApricot/pyROOTforCMSDAS/master/setupLibraries.ipynb
+wget https://raw.githubusercontent.com/nhduongvn/CMSPOS-BTaggingExercise/master/setup-libraries.ipynb
 ```
 
-Go back to browser and run the setupLibraries.ipynb (located at BTV_SW folder). 
+Go back to browser and run the [setup-libraries.ipynb](setup-libraries.ipynb).
 
 <p align="center">
   <img src="kernal_setting.png" width="200"/>
