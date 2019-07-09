@@ -53,7 +53,7 @@ Go back to browser and run the [setup-libraries.ipynb](setup-libraries.ipynb) in
   <img src="kernal_setting.png" width="200"/>
 </p>
 
-4. Go back to the browser and navigated to `CMSSW_10_2_15/src/CMSPOS/BTaggingExercise` open the notebook called [notebooks/Exercise1.ipynb](notebooks/Exercise1.ipynb) with kernel `btv-exercise` setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
+4. Go back to the browser and navigated to `CMSSW_10_2_11/src/CMSPOS/BTaggingExercise` open the notebook called [notebooks/Exercise1.ipynb](notebooks/Exercise1.ipynb) with kernel `btv-exercise` setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
 
 Follow this picture 
 <p align="center">
