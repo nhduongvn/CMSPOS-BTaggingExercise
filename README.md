@@ -36,33 +36,27 @@ scp yourusername@lxplus.cern.ch:~/.globus/* .
 voms-proxy-init -voms cms
 ```
 
-(Note: replace `lxplus.cern.ch` by the site where you store your GRID proxy. It is `cmslpc-sl6.fnal.gov` if you store your GRID proxy at FNAL LPC site) 
+(Note: replace `lxplus.cern.ch` by the site where you store your GRID proxy. It is `cmslpc-sl7.fnal.gov` if you store your GRID proxy at FNAL LPC site) 
 
 3. Get environment setup notebook:
 
 At terminal, do
 ```bash
-mkdir BTV_SF
-cd BTV_SF
+cd
+mkdir BTV_SW
+cd BTV_SW
 wget https://raw.githubusercontent.com/nhduongvn/CMSPOS-BTaggingExercise/master/setup-libraries.ipynb
 ```
 
-Go back to browser and run the [setup-libraries.ipynb](setup-libraries.ipynb) in `BTV_SF` folder.
+Go back to browser and run the [setup-libraries.ipynb](setup-libraries.ipynb) in `BTV_SW` folder.
 
 <p align="center">
   <img src="kernal_setting.png" width="200"/>
 </p>
 
-4. Go back to the browser and navigated to `CMSSW_10_2_11/src/CMSPOS/BTaggingExercise` open the notebook called [notebooks/Exercise1.ipynb](notebooks/Exercise1.ipynb) with kernel `btv-exercise` setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
+4. Go back to the browser and navigated to `CMSSW_10_6_4/src/CMSPOS/BTaggingExercise` open the notebook called [notebooks/Exercise1.ipynb](notebooks/Exercise1.ipynb) with kernel `btv-exercise` setup. This notebook will be used as the bash shell to execute terminal commands in the exercise Twiki.
 
-Follow this picture 
-<p align="center">
-  <img src="kernal_shell_1.png" width="200"/>
-</p>
-
-<p align="center">
-  <img src="kernal_shell_2.png" width="200"/>
-</p>
+To change kernel to `btv-exercise`, go to `Kernel` menu and select `Change kernel`
 
 5. Now start your exercises as instructed in the twiki, for example, git setting and exercises downloading
 
